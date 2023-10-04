@@ -11,7 +11,7 @@
                          bg-weather-primary
                           py-2 px-6"
                           @click="$emit('close-modal')"
-                          >Close</button>
+                          >Cerrar</button>
                     </div>
                 </Transition>
             </div>

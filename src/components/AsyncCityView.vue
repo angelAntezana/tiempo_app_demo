@@ -5,8 +5,8 @@
         v-if="route.query.preview" class="text-white p-4
         bg-weather-secondary w-full text-center"
         >
-        <p>You are currently previewing this city, click the "+"
-            icon to start tracking this city.</p>
+        <p>Actualmente estás obteniendo una vista previa de esta ciudad, haz clic en "+"
+            ícono para comenzar a rastrear esta ciudad.</p>
         </div>
         <!--WEATHER overview-->
 
@@ -16,7 +16,7 @@
         <p class="text-sm mb-12">
         {{
         new Date(weatherData.currentTime).toLocaleDateString(
-            "en-us",
+            "es-es",
             {
             weekday: "short",
             day: "2-digit",
@@ -38,7 +38,7 @@
         </p>
 
         <p>
-            Feels like
+            Se siente como
             {{ Math.round(weatherData.current.feels_like) }}&deg;
 
         </p>
@@ -88,7 +88,7 @@
         <!--Weekly Weather-->
         <div class="max-w-screen-md w-full py-12">
             <div class="mx-8 text-white">
-                <h2 class="mb-4">7 Day Forecast</h2>
+                <h2 class="mb-4">Pronóstico de 7 días</h2>
                 <div v-for="day in weatherData.daily"
                 :key="day.dt"
                 class="flex items-center"
@@ -120,7 +120,7 @@
         @click="removeCity"
         >
         <i class="fa-solid fa-trash"></i>
-        <p>Remove city</p>
+        <p>Eliminar ciudad</p>
         </div>
     </div>
 </template>
@@ -159,7 +159,7 @@ const getWeatherData = async () =>{
 }
 
 const weatherData = await getWeatherData();
-console.log(weatherData)
+
 
 const LOCAL_SAVED_CITIES = 'savedCities';
 const router = useRouter();

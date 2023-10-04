@@ -6,7 +6,7 @@
     <RouterLink :to="{ name: 'home' }">
     <div class="flex items-center gap-3">
         <i class="fa-solid fa-sun text-2xl"></i>
-        <p class="text-2xl">The local Weather</p>
+        <p class="text-2xl">El tiempo local</p>
     </div>
     </RouterLink>
     <div class="flex gap-3 flex-1 justify-end">
@@ -27,33 +27,33 @@
     </div>
     <BaseModal :modalActive="modalActive" @close-modal="toggleModal">
     <div class="text-black">
-        <h1 class="text-2xl mb-1">About:</h1>
+        <h1 class="text-2xl mb-1">Acerca de:</h1>
         <p class="mb-4">
-        The Local Weather allows you to track the current and
-        future weather of cities of your choosing.
+        El tiempo local le permite seguir el tiempo actual y
+        clima futuro de las ciudades de su elección.
         </p>
-        <h2 class="text-2xl">How it works:</h2>
+        <h2 class="text-2xl">Como funciona:</h2>
         <ol class="list-decimal list-inside mb-4">
         <li>
-            Search for your city by entering the name into the
-            search bar.
+            Busque su ciudad ingresando el nombre en el
+            barra de búsqueda.
         </li>
         <li>
-            Select a city within the results, this will take
-            you to the current weather for your selection.
+            Seleccione una ciudad dentro de los resultados, esto tomará
+            usted al tiempo actual para su selección.
         </li>
         <li>
-            Track the city by clicking on the "+" icon in the
-            top right. This will save the city to view at a
-            later time on the home page.
+            Realice un seguimiento de la ciudad haciendo clic en el icono "+" en el
+            parte superior derecha. Esto guardará la ciudad para verla en un
+            más tarde en la página de inicio.
         </li>
         </ol>
 
-        <h2 class="text-2xl">Removing a city</h2>
+        <h2 class="text-2xl">Eliminar ciudad</h2>
         <p>
-        If you no longer wish to track a city, simply select
-        the city within the home page. At the bottom of the
-        page, there will be am option to delete the city.
+            Si ya no deseas rastrear una ciudad, simplemente selecciona
+            la ciudad dentro de la página de inicio. En la parte inferior del
+            página, habrá una opción para eliminar la ciudad.
         </p>
     </div>
     </BaseModal>
