@@ -27,7 +27,7 @@ const mapboxSearchResults = ref(null);
 const searchError = ref(null)
 
 
-const mapboxAPIKey = "pk.eyJ1IjoiYW5nZWwtYW50ZXphbmEiLCJhIjoiY2xtcGJvano4MDN3ZDJrcW1wY3RhcjRiMyJ9.qKRaMGbCBAOjXsA0U8ldXw"
+const mapboxAPIKey = import.meta.env.VITE_mapbox_accesstoken;
 const getSearchResults = ()=>{
   clearTimeout(queryTimeout.value);
   queryTimeout.value = setTimeout(async ()=>{
