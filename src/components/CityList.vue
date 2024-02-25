@@ -19,8 +19,8 @@ import { useRouter } from 'vue-router';
 import CityCard from './CityCard.vue';
 
 const LOCAL_SAVED_CITIES = 'savedCities';
-const BASE_URL_WEATHER = import.meta.env.VITE_baseurl_weather;
-const API_KEY = import.meta.env.VITE_apikey;
+const BASE_URL_WEATHER = import.meta.env.VITE_BASEURL_WEATHER;
+const API_KEY = import.meta.env.VITE_APIKEY;
 
 const savedCities = ref([]);
 const getCities = async ()=>{
